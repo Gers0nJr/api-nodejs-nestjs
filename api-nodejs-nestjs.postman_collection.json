@@ -1,0 +1,155 @@
+{
+	"variables": [],
+	"info": {
+		"name": "api-nodejs-nestjs",
+		"_postman_id": "c56525ba-321f-1776-19ec-be645111267b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " http://localhost:3000/users/4c1cf450-f821-4bdc-83ec-46709ed52ecb",
+			"request": {
+				"url": " http://localhost:3000/users/4c1cf450-f821-4bdc-83ec-46709ed52ecb",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YjcwMmVjLTBjOWYtNDFlOS04ZTNmLWNhZTM4MWM4YTk5OSIsImlhdCI6MTYwNzYyNjM1OSwiZXhwIjoxNjA3NjQ0MzU5fQ.VAIFyoU86x1iHwdlyd8xw6tyUkZhcvnByw5ELqEZd-Q",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \n        \"name\": \"Outro Admin\"\n       \n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/users/4c1cf450-f821-4bdc-83ec-46709ed52ecb",
+			"request": {
+				"url": " http://localhost:3000/users/4c1cf450-f821-4bdc-83ec-46709ed52ecb",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YjcwMmVjLTBjOWYtNDFlOS04ZTNmLWNhZTM4MWM4YTk5OSIsImlhdCI6MTYwNzYyNjM1OSwiZXhwIjoxNjA3NjQ0MzU5fQ.VAIFyoU86x1iHwdlyd8xw6tyUkZhcvnByw5ELqEZd-Q",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/users",
+			"request": {
+				"url": " http://localhost:3000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YjcwMmVjLTBjOWYtNDFlOS04ZTNmLWNhZTM4MWM4YTk5OSIsImlhdCI6MTYwNzYyMjU0OSwiZXhwIjoxNjA3NjQwNTQ5fQ.Y0MoGLq-ZuwPxQ-Q3xtuY_ajSyo3JJJxVfpoCnNEGRA",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"aOutro Admin\",\n\t\"email\": \"aoutroadmin@gmail.com\",\n\t\"password\": \"@123Abc\",\n\t\"passwordConfirmation\": \"@123Abc\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/auth/me",
+			"request": {
+				"url": " http://localhost:3000/auth/me",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImQ0YjcwMmVjLTBjOWYtNDFlOS04ZTNmLWNhZTM4MWM4YTk5OSIsImlhdCI6MTYwNzYyMTgxNSwiZXhwIjoxNjA3NjM5ODE1fQ.fzYM6x92actEsVMUuS3MXfmvcCvwSOY8WooIYWuz54U",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/auth/signin",
+			"request": {
+				"url": " http://localhost:3000/auth/signin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"user@gmail.com\",\n\t\"password\": \"@123Abc\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/users",
+			"request": {
+				"url": " http://localhost:3000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"Teste User\",\n\t\"email\": \"user@gmail.com\",\n\t\"password\": \"@123Abc\",\n\t\"passwordConfirmation\": \"@123Abc\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:3000/users",
+			"request": {
+				"url": " http://localhost:3000/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\": \"\",\n\t\"email\": \"admin@gmail.com\",\n\t\"password\": \"123456\",\n\t\"passwordConfirmation\": \"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
