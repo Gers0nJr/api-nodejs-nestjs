@@ -5,7 +5,8 @@ import {
   ValidationPipe,
   Get,
   UseGuards,
-  Req,
+  Patch,
+  Param,
 } from '@nestjs/common';
 import { AuthService } from './auth.service';
 import { CreateUserDto } from '../users/dtos/create-user.dto';
@@ -13,6 +14,7 @@ import { CredentialsDto } from './dtos/credentials.dto';
 import { AuthGuard } from '@nestjs/passport';
 import { User } from '../users/user.entity';
 import { GetUser } from './get-user.decorator';
+import { ReturnUserDto } from '../users/dtos/return-user.dto';
 
 @Controller('auth')
 export class AuthController {
@@ -33,6 +35,14 @@ export class AuthController {
     @Body(ValidationPipe) credentiaslsDto: CredentialsDto,
   ): Promise<{ token: string }> {
     return await this.authService.signIn(credentiaslsDto);
+  }
+
+  @Patch(':token')
+  async confirmEmail(@Param('token') token: string) {
+    const user = await this.authService.confirmEmail(token);
+    return {
+      message: 'Email confirmado',
+    };
   }
 
   @Get('/me')
